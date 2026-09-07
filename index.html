@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>桐葉祭の✝本質✝ ――教室に棲む記号の話――</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app" class="app">
+  <!-- ============ ゲーム画面 ============ -->
+  <div id="screen" class="screen hidden">
+    <div id="bgLayer" class="bg-layer"><div id="bgImage"></div><div id="bgTint"></div></div>
+    <div id="fgLayer" class="fg-layer"></div>
+    <div id="effectLayer" class="effect-layer"></div>
+    <div id="dateBox" class="date-box"></div>
+
+    <div id="hud" class="hud">
+      <div id="hudChapter" class="hud-chapter"></div>
+      <div id="hudTrace" class="hud-trace" title="✝本質✝の痕跡"></div>
+      <div class="hud-buttons">
+        <button class="hud-btn" id="btnAuto" title="オート">⏵⏵</button>
+        <button class="hud-btn" id="btnSkip" title="スキップ">≫≫</button>
+        <button class="hud-btn" id="btnBacklog" title="バックログ">ログ</button>
+        <button class="hud-btn" id="btnSave" title="セーブ">保存</button>
+        <button class="hud-btn" id="btnLoad" title="ロード">読込</button>
+        <button class="hud-btn" id="btnConfig" title="設定">設定</button>
+        <button class="hud-btn" id="btnTitle" title="タイトルへ">✝</button>
+      </div>
+    </div>
+
+    <div id="msgArea" class="msg-area">
+      <div id="namePlate" class="name-plate hidden"></div>
+      <div id="msgWindow" class="msg-window">
+        <div id="msgText" class="msg-text"></div>
+        <div id="msgNext" class="msg-next hidden">▼</div>
+      </div>
+    </div>
+
+    <div id="choiceLayer" class="choice-layer hidden"></div>
+    <div id="traceNote" class="trace-note hidden"></div>
+    <div id="endStamp" class="end-stamp hidden">✝</div>
+  </div>
+
+  <!-- ============ タイトル画面 ============ -->
+  <div id="titleScreen" class="title-screen">
+    <div class="title-bg"></div>
+    <div class="title-main">
+      <div class="title-school">桐葉高校 理数科B組 文化祭特別ノベル</div>
+      <div class="title-logo">✝本質✝</div>
+      <h1 class="title-name">桐葉祭の<span class="honshitsu">✝本質✝</span></h1>
+      <div class="title-sub">――教室に棲む記号の話――</div>
+      <div class="title-menu">
+        <button class="t-btn primary" id="tNew">はじめから</button>
+        <button class="t-btn" id="tContinue">つづきから</button>
+        <button class="t-btn" id="tChapter">チャプター選択</button>
+        <button class="t-btn" id="tGallery">おまけ</button>
+        <button class="t-btn" id="tConfig">設定</button>
+      </div>
+      <div class="title-foot">原作「偏差値60の教室から✝本質✝が漏れ出している件について」より・番外編</div>
+    </div>
+  </div>
+
+  <!-- ============ おまけ / モーダル群 ============ -->
+  <div id="modalRoot" class="modal-root hidden"></div>
+
+  <!-- ページロード直後の操作ガイド -->
+  <div id="bootMsg" class="boot-msg hidden"></div>
+</div>
+
+<script src="js/audio.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/data/common.js"></script>
+<script src="js/data/ch00_prologue.js"></script>
+<script src="js/data/ch01_seiji.js"></script>
+<script src="js/data/ch02_mie.js"></script>
+<script src="js/data/ch03_rei.js"></script>
+<script src="js/data/ch04_satou.js"></script>
+<script src="js/data/ch05_ran.js"></script>
+<script src="js/data/ch06_festival.js"></script>
+<script src="js/data/ch07_finale.js"></script>
+<script src="js/data/ep_true.js"></script>
+<script src="js/data/ep_good.js"></script>
+<script src="js/data/ep_normal.js"></script>
+<script src="js/data/ep_bad.js"></script>
+<script src="js/data/ep_hidden.js"></script>
+<script src="js/ui.js"></script>
+</body>
+</html>
